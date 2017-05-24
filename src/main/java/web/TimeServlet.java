@@ -38,7 +38,7 @@ public class TimeServlet extends HttpServlet {
         String now = sdf.format(date);
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
-        //此处偷懒输出一个简化后的页面
+        //此处偷懒输出一个简化后的页面test
         out.println("<p>" + now + "</p>");
         out.close();
     }
