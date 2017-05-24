@@ -19,7 +19,7 @@ public class TimeServlet extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //1.使用request接收请求数据
         //1.1请求行
-        System.out.println("协议类型" + req.getPathInfo());
+        System.out.println("协议类型" + req.getProtocol());
         System.out.println("访问路径" + req.getServletPath());
         System.out.println("请求方式" + req.getMethod());
         //1.2消息头(key-value)
